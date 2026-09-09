@@ -95,8 +95,8 @@ const MobileAppBanner = ({ onOpenDownloadModal }) => {
       </button>
 
       {/* App Icon */}
-      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-black text-xl shadow-md shrink-0 border border-emerald-400/40">
-        🏷️
+      <div className="w-10 h-10 rounded-xl bg-slate-950 flex items-center justify-center shrink-0 border border-emerald-500/30 p-1">
+        <img src="/pricehunt-icon.png" alt="PriceHunt" className="w-full h-full object-contain" />
       </div>
 
       {/* App Title & Info */}

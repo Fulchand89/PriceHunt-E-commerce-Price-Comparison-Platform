@@ -98,8 +98,8 @@ const MobileAppSection = ({ featuredLiveProduct, onOpenDownloadModal }) => {
                 {/* Smartphone App Header */}
                 <div className="p-3 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-xs font-black shadow-sm">
-                      🏷️
+                    <div className="w-7 h-7 rounded-xl bg-slate-950 flex items-center justify-center p-0.5 shadow-sm border border-emerald-500/30">
+                      <img src="/pricehunt-icon.png" alt="PriceHunt" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <span className="font-extrabold text-xs text-white block leading-none">PriceHunt</span>

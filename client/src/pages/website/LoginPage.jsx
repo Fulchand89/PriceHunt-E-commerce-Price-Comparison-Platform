@@ -48,9 +48,11 @@ const LoginPage = () => {
 
         {/* Brand Header */}
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center text-2xl font-black mx-auto shadow-md shadow-emerald-500/25">
-            🏷️
-          </div>
+          <img 
+            src="/pricehunt-logo.png" 
+            alt="PriceHunt" 
+            className="h-12 w-auto object-contain mx-auto" 
+          />
           <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
             Welcome Back to <span className="text-emerald-600">PriceHunt</span>
           </h1>

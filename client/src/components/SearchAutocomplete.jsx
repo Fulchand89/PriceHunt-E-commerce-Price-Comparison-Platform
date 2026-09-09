@@ -8,7 +8,7 @@ import { fetchCategories } from '../redux/slices/categorySlice';
 
 const SearchAutocomplete = ({ 
   className = '', 
-  placeholder = 'Search products, brands...',
+  placeholder = 'Search products, brands & categories...',
   showCategorySelect = true,
   initialCategory = '',
   initialQuery = ''

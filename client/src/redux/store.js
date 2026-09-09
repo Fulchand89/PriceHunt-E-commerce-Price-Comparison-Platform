@@ -7,6 +7,7 @@ import priceAlertReducer from './slices/priceAlertSlice';
 import storeReducer from './slices/storeSlice';
 import amazonReducer from './slices/amazonSlice';
 import flipkartReducer from './slices/flipkartSlice';
+import meeshoReducer from './slices/meeshoSlice';
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     products: productReducer,
     amazon: amazonReducer,
     flipkart: flipkartReducer,
+    meesho: meeshoReducer,
     categories: categoryReducer,
     wishlist: wishlistReducer,
     priceAlerts: priceAlertReducer,

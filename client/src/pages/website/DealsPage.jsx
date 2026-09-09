@@ -183,8 +183,8 @@ const DealsPage = () => {
           </div>
         ) : filteredCoupons.length === 0 ? (
           <div className="bg-white rounded-3xl p-12 text-center border border-slate-200 space-y-3 max-w-md mx-auto">
-            <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center mx-auto text-xl font-bold">
-              🏷️
+            <div className="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mx-auto p-2">
+              <img src="/pricehunt-icon.png" alt="Coupons" className="w-full h-full object-contain" />
             </div>
             <h3 className="font-extrabold text-slate-900 text-lg">No Coupons Found</h3>
             <p className="text-xs text-slate-500">Try changing your search keywords or switching category filters.</p>
@@ -208,8 +208,8 @@ const DealsPage = () => {
                   {/* Top Colored Header Banner for Store */}
                   <div className={`p-4 bg-gradient-to-r ${c.storeColor || 'from-emerald-600 to-teal-600'} text-white flex items-center justify-between relative`}>
                     <div className="flex items-center gap-2.5">
-                      <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white font-black text-sm shadow-xs">
-                        🏷️
+                      <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center p-1.5 shadow-xs">
+                        <img src="/pricehunt-icon.png" alt="Deal" className="w-full h-full object-contain" />
                       </div>
                       <div>
                         <span className="font-extrabold text-sm text-white block leading-tight">{c.store}</span>

@@ -96,6 +96,7 @@ const metaRoutes      = require('./routes/meta.routes');
 const mobileAppRoutes = require('./routes/mobileApp.routes');
 const amazonRoutes    = require('./routes/amazonRoutes');
 const flipkartRoutes  = require('./routes/flipkartRoutes');
+const meeshoRoutes    = require('./routes/meeshoRoutes');
 const comparisonRoutes = require('./routes/comparison.routes');
 
 // ── API Root Index & Welcome ───────────────────────────────────────────────────
@@ -112,6 +113,8 @@ app.get(['/', '/api'], (_req, res) => {
       amazonProduct: '/api/amazon/product/:asin',
       flipkartSearch: '/api/flipkart/search?q=iphone',
       flipkartProduct: '/api/flipkart/product/:id',
+      meeshoSearch: '/api/meesho/search?q=iphone',
+      meeshoProduct: '/api/meesho/product/:id',
       compareProduct: '/api/comparison/product/:id',
       compareAmazon: '/api/comparison/amazon/:asin',
       compareFlipkart: '/api/comparison/flipkart/:id',
@@ -130,6 +133,7 @@ app.get(['/', '/api'], (_req, res) => {
 // ── API routes ────────────────────────────────────────────────────────────────
 app.use('/api/amazon',        amazonRoutes);
 app.use('/api/flipkart',      flipkartRoutes);
+app.use('/api/meesho',        meeshoRoutes);
 app.use('/api/comparison',    comparisonRoutes);
 app.use('/api/auth',          authRoutes);
 app.use('/api/search',        searchRoutes);
