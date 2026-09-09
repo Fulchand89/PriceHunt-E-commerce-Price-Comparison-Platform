@@ -51,7 +51,7 @@ const HeroSection = ({ popularSearchTags = [] }) => {
         <div className="pt-4 max-w-2xl mx-auto w-full space-y-3">
           <SearchAutocomplete 
             className="shadow-2xl text-slate-900" 
-            placeholder="Search iPhone 16, MacBook, Sony headphones, shoes..." 
+            placeholder="Search products, brands & categories..." 
             showCategorySelect={true}
           />
 

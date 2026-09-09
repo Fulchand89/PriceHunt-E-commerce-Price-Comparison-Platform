@@ -80,22 +80,22 @@ const Header = ({ onOpenDownloadModal }) => {
       className={`sticky top-0 z-40 bg-slate-100 backdrop-blur-md border-b border-slate-200/90 text-slate-800 transition-all duration-200 ${isScrolled ? 'shadow-md shadow-slate-900/5' : 'shadow-xs'
         }`}
     >
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 ">
 
         {/* TOP ROW: [PRICEHUNT LOGO] [Home  Categories  Deals  Compare] [👤 Login / Profile] */}
-        <div className="flex items-center justify-between h-14 sm:h-16 gap-3">
+        <div className="flex items-center justify-between h-20 sm:h-24 gap-4">
 
           {/* Left: Official Brand Logo */}
-          <Link to="/" className="flex items-center group shrink-0 select-none">
+          <Link to="/" className="flex items-center group shrink-0 select-none py-2">
             <img
-              src="/pricehunt-logo.png"
+              src="/image copy.png"
               alt="PriceHunt"
-              className="h-8 sm:h-9 md:h-10 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-11 sm:h-13 md:h-15 w-auto object-contain group-hover:scale-105 transition-transform"
             />
           </Link>
 
           {/* Center: Navigation Links (Home, Categories, Deals, Compare) */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[15px] font-semibold">
             {/* Home */}
             <Link
               to="/"
@@ -304,14 +304,6 @@ const Header = ({ onOpenDownloadModal }) => {
           </div>
         </div>
 
-        {/* BOTTOM ROW: [ 🔍 Search products, brands & categories... ] */}
-        <div className="pb-3.5 pt-1 flex justify-center w-full">
-          <div className="w-full max-w-2xl sm:max-w-3xl">
-            <SearchAutocomplete
-              placeholder="Search products, brands & categories..."
-            />
-          </div>
-        </div>
 
       </div>
 
